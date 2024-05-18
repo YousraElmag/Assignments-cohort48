@@ -138,7 +138,7 @@ function createGame(context, numRows, numColumns) {
         cell.lifeTime=0
       }
       cell.alive = cell.nextAlive;
-    });
+    })
   }
 
   // Render a visual representation of the grid
