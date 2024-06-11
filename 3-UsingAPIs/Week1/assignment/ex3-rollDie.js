@@ -63,4 +63,4 @@ function main() {
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
-module.exports = rollDie;
+module.exports = rollDie

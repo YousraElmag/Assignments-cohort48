@@ -44,4 +44,4 @@ function main() {
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
-module.exports = rollDice;
+module.exports = rollDice
