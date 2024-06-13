@@ -16,8 +16,6 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const results = [];
-
-  // TODO: expand the chain to include five dice
   return rollDie(1)
     .then((value) => {
       results.push(value);

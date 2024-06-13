@@ -8,17 +8,18 @@ Rewrite this function, but replace the callback syntax with the Promise syntax:
 - If the Promise `rejects`, pass an error as the argument to reject with: "You 
   didn't pass in a first name!"
 ------------------------------------------------------------------------------*/
-// TODO see above
+
+
 const getAnonName = (firstName) => {
-  return new Promise((res,rej)=>{
+  return new Promise((resolve,reject)=>{
   setTimeout(() => {
     if (!firstName) {
-      rej(new Error("You didn't pass in a first name!"));
+      reject(new Error("You didn't pass in a first name!"));
       return;
     }
 
     const fullName = `${firstName} Doe`;
-res(fullName)
+resolve(fullName)
   }, 1000);
 })}
 
@@ -33,3 +34,4 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = getAnonName
+
